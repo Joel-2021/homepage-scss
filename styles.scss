@@ -2,14 +2,15 @@
 
 main {
   width: 100vw;
-//   max-width: 1440px;
-  margin: 0;
+  max-width: 1920px;
+  margin: auto !important;
   padding: 0 !important;
   box-sizing: border-box;
   background-color: #f5f5f5 !important;
 }
 .top-nav {
   padding: 23px 100px 0px 100px;
+  margin-bottom: 18px;
   ul {
     display: flex;
     gap: 20px;
@@ -26,11 +27,8 @@ main {
   font-family: "Poppins";
   padding-left: 100px;
   padding-right: 100px;
-  gap: 100px;
-  justify-content: space-between;
   align-items: center;
   .nav-options {
-    justify-content: space-between;
     .active {
       font-weight: 700;
       text-align: center;
@@ -48,14 +46,13 @@ main {
         }
       }
     }
-    .login-btn {
+    button {
       position: relative;
       font-weight: 400;
       font-size: 16px;
       line-height: 25px;
       border-radius: 50px;
       width: 150px;
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -124,11 +121,10 @@ main {
       z-index: 0;
       bottom: -70px;
       left: -100px;
-      width: 115%;
       img {
-        // width: 100vw;
+        width:100vw;
+        max-width: 1920px;
         object-fit: contain;
-        max-width: 100%;
         max-height: 100%;
       }
     }
@@ -250,31 +246,32 @@ main {
   font-family: "Plus Jakarta Sans";
   font-weight: 400;
   text-transform: capitalize;
+  justify-content: space-between;
   .gradient-1 {
-    z-index: -1;
+    z-index: 1;
     width: 287.83px;
     height: 277.27px;
     left: 1037px;
     bottom: -200px;
 
     background: #ff2e00;
-    // opacity: 0.45;
     opacity: 0.25;
+    // opacity: 0.45;
     filter: blur(200px);
   }
   .gradient-2 {
-    z-index: -1;
+    z-index: 1;
     width: 340.28px;
     height: 300.09px;
     left: 1041.03px;
 
     background: #ff2e00;
-    // opacity: 0.45;
     opacity: 0.25;
+    // opacity: 0.45;
     filter: blur(300px);
   }
   .gradient-3 {
-    z-index: -1;
+    z-index: 1;
 
     width: 292.6px;
     height: 277.27px;
@@ -286,7 +283,7 @@ main {
     filter: blur(200px);
   }
   .gradient-4 {
-    z-index: -1;
+    z-index: 1;
     width: 442.81px;
     height: 320.19px;
     left: 837px;
@@ -320,6 +317,7 @@ main {
   }
   .customer-images {
     width: 50%;
+    height: 400px;
     .circle {
       z-index: 10;
       border-radius: 50%;
@@ -335,29 +333,28 @@ main {
     }
     .circle:nth-child(1) {
       // left: 150px;
-      left: 20%;
+      right: 455px;
       top: -50px;
     }
     .circle:nth-child(2) {
-      bottom: 200px;
-      left: 300px;
+      top: 20px;
+      right: 160px;
     }
     .circle:nth-child(3) {
-      top: 190px;
-      left: 200px;
+      bottom: 65px;
+      right: 300px;
     }
     .circle:nth-child(4) {
-      left: 470px;
+      right: -50px;
       top: -50px;
     }
     .circle:nth-child(5) {
-      top: 100px;
-      left: 0px;
+      bottom: 125px;
+      right: 550px;
     }
     .circle:nth-child(6) {
-      bottom: 100px;
-      bottom: 10%;
-      left: 90%;
+      bottom: 50px;
+      right: 0;
       //   left:550px;
     }
   }
@@ -365,7 +362,7 @@ main {
     right: 0px;
     img {
       width: 750px;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 }
