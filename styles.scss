@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Poppins:wght@400;500;700&family=Quicksand:wght@700&family=Raleway:wght@600;800&display=swap");
+@mixin button() {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 50px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 4px solid rgba(27, 133, 246, 1);
+  padding: 8px 30px 8px 20px;
+  img {
+    position: absolute;
+    right: 10px;
+  }
+}
+@mixin gradient($value) {
+  background: $value;
+  opacity: 0.25;
+  filter: blur(200px);
+}
 main {
   width: 100vw;
   max-width: 1920px;
@@ -25,8 +47,7 @@ main {
 }
 .options {
   font-family: "Poppins";
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 0 100px 0 100px;
   align-items: center;
   .nav-options {
     .active {
@@ -47,30 +68,18 @@ main {
       }
     }
     button {
-      position: relative;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 25px;
-      border-radius: 50px;
       width: 150px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      border: 4px solid rgba(27, 133, 246, 1);
-      padding: 8px 30px 8px 20px;
-      img {
-        position: absolute;
-        right: 10px;
-      }
+      @include button();
     }
   }
 }
 
 .hero-section {
-  padding-top: 75px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 75px 100px 0 100px;
+  background-image: url('/assets/images/lines.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center 29%;
   font-family: "Plus Jakarta Sans";
   text-transform: capitalize;
   .hs-1 {
@@ -80,54 +89,40 @@ main {
       height: 277.27px;
       left: 181px;
       top: 500.89px;
-      background: #ff2e00;
-      opacity: 0.25;
-      //   opacity: 0.45;
-      filter: blur(200px);
+      @include gradient(#ff2e00);
     }
     .gradient-2 {
       width: 340.28px;
       height: 300.09px;
       left: 285.03px;
       top: 301px;
-
-      background: #ff2e00;
-      opacity: 0.25;
-      //   opacity: 0.45;
-      filter: blur(300px);
+      @include gradient(#ff2e00);
     }
     .gradient-3 {
       width: 292.6px;
       height: 277.27px;
       left: 403.43px;
       top: 498.22px;
-
-      background: #ffc700;
-      opacity: 0.25;
-      //   opacity: 0.45;
-      filter: blur(200px);
+      @include gradient(#ffc700);
     }
     .gradient-4 {
       width: 442.81px;
       height: 320.19px;
       left: 181px;
       top: 301px;
-      background: #e69700;
-      opacity: 0.25;
-      //   opacity: 0.45;
-      filter: blur(200px);
+      @include gradient(#e69700);
     }
-    .lines {
-      z-index: 0;
-      bottom: -70px;
-      left: -100px;
-      img {
-        width:100vw;
-        max-width: 1920px;
-        object-fit: contain;
-        max-height: 100%;
-      }
-    }
+    // .lines {
+    //   z-index: 0;
+    //   bottom: -70px;
+    //   left: -100px;
+    //   img {
+    //     width: 100vw;
+    //     max-width: 1920px;
+    //     object-fit: contain;
+    //     max-height: 100%;
+    //   }
+    // }
     h1 {
       font-family: "Raleway";
       font-weight: 800;
@@ -142,18 +137,8 @@ main {
       z-index: 10;
     }
     button {
-      position: relative;
-      margin-top: 1rem;
-      font-family: "poppins";
-      border-radius: 50px;
-      gap: 10px;
-      border: 4px solid rgba(27, 133, 246, 1);
-      padding: 8px 30px 8px 20px;
       width: 196px;
-      img {
-        position: absolute;
-        right: 10px;
-      }
+      @include button();
     }
   }
   .hs-2 {
@@ -162,29 +147,20 @@ main {
       height: 426.45px;
       left: 185px;
       bottom: -10%;
-      background: #e600b3;
-      opacity: 0.45;
-      opacity: 0.25;
-      filter: blur(200px);
+      @include gradient(#e600b3);
     }
     .gradient-2 {
       width: 357.44px;
       height: 338.71px;
       left: 292.39px;
       top: 50%;
-      background: #2400ff;
-      //   opacity: 0.45;
-      opacity: 0.25;
-      filter: blur(200px);
+      @include gradient(#2400ff);
     }
     .gradient-3 {
       width: 540.94px;
       height: 391.14px;
       left: 50%;
-      background: #0069e5;
-      //   opacity: 0.45;
-      opacity: 0.25;
-      filter: blur(200px);
+      @include gradient(#0069e5);
     }
     h1 {
       font-weight: 700;
@@ -192,17 +168,8 @@ main {
       padding-bottom: 1rem;
     }
     button {
-      margin-top: 1rem;
-      border-radius: 50px;
-      gap: 10px;
-      border: 4px solid rgba(27, 133, 246, 1);
-      padding: 8px 30px 8px 20px;
-      position: relative;
+      @include button();
       width: 196px;
-      img {
-        position: absolute;
-        right: 10px;
-      }
     }
     .hero-img {
       position: relative;
@@ -212,9 +179,7 @@ main {
 }
 
 .categories {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 100px;
+  padding: 100px 100px 0px 100px;
   gap: 25px;
   .category {
     background: #f7f7f7;
@@ -231,7 +196,6 @@ main {
     }
     p {
       font-family: "Raleway";
-      font-style: normal;
       font-weight: 600;
       font-size: 28px;
       line-height: 40px;
@@ -253,11 +217,7 @@ main {
     height: 277.27px;
     left: 1037px;
     bottom: -200px;
-
-    background: #ff2e00;
-    opacity: 0.25;
-    // opacity: 0.45;
-    filter: blur(200px);
+    @include gradient(#ff2e00);
   }
   .gradient-2 {
     z-index: 1;
@@ -265,10 +225,7 @@ main {
     height: 300.09px;
     left: 1041.03px;
 
-    background: #ff2e00;
-    opacity: 0.25;
-    // opacity: 0.45;
-    filter: blur(300px);
+    @include gradient(#ff2e00);
   }
   .gradient-3 {
     z-index: 1;
@@ -277,10 +234,7 @@ main {
     height: 277.27px;
     left: 1059.43px;
 
-    background: #ffc700;
-    opacity: 0.25;
-    // opacity: 0.45;
-    filter: blur(200px);
+    @include gradient(#ffc700);
   }
   .gradient-4 {
     z-index: 1;
@@ -288,10 +242,7 @@ main {
     height: 320.19px;
     left: 837px;
 
-    background: #e69700;
-    opacity: 0.25;
-    // opacity: 0.45;
-    filter: blur(200px);
+    @include gradient(#e69700);
   }
   .customer-content {
     width: 40%;
@@ -301,23 +252,16 @@ main {
       line-height: 60px;
     }
     button {
-      margin-top: 1.5rem;
-      font-family: "poppins";
-      border-radius: 50px;
-      gap: 10px;
-      border: 4px solid rgba(27, 133, 246, 1);
-      padding: 8px 30px 8px 20px;
-      position: relative;
       width: 196px;
-      img {
-        position: absolute;
-        right: 10px;
-      }
+      @include button();
     }
   }
   .customer-images {
     width: 50%;
     height: 400px;
+    // background-image: url(/assets/images/lines2.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     .circle {
       z-index: 10;
       border-radius: 50%;
@@ -355,7 +299,6 @@ main {
     .circle:nth-child(6) {
       bottom: 50px;
       right: 0;
-      //   left:550px;
     }
   }
   .lines {
@@ -368,8 +311,7 @@ main {
 }
 
 footer {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 0px 100px 0px 100px;
   font-family: "Poppins";
   text-align: left;
   text-transform: capitalize;
