@@ -75,6 +75,10 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "hero-content hero-img";
+  background-image: url("/assets/images/orange.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .hero-section .hs-1 .hero-content {
   grid-area: hero-content;

@@ -101,6 +101,10 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "hero-content hero-img";
+    background-image: url("/assets/images/orange.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
     .hero-content {
       grid-area: hero-content;
       align-self: center;
