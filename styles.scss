@@ -98,7 +98,7 @@ main {
       align-self: center;
       justify-self: center;
       background-image: url("/assets/images/orange.png");
-      background-position-x: 40%;
+      background-position-x: 10%;
       background-size: 70%;
       background-repeat: no-repeat;
       grid-area: hero-content;
@@ -419,6 +419,7 @@ footer {
       }
       .hero-content {
         background-position: center;
+        background-position-x: 40%;
         padding-top: 1rem;
         text-align: center;
         padding-bottom: 3rem;
