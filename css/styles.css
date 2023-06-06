@@ -75,12 +75,12 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "hero-content hero-img";
+}
+.hero-section .hs-1 .hero-content {
   background-image: url("/assets/images/orange.png");
   background-position-x: 10%;
   background-size: contain;
   background-repeat: no-repeat;
-}
-.hero-section .hs-1 .hero-content {
   grid-area: hero-content;
   align-self: center;
   justify-self: center;
@@ -115,8 +115,8 @@ main {
   justify-self: center;
 }
 .hero-section .hs-1 .hero-img img {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
 }
 .hero-section .hs-2 {
   display: grid;
@@ -166,7 +166,6 @@ main {
   right: 10px;
 }
 .hero-section .hs-2 .hero-img {
-  background-size: contain;
   grid-area: hero-img;
   align-self: center;
   justify-self: center;

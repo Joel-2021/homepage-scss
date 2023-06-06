@@ -101,11 +101,11 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "hero-content hero-img";
-    background-image: url("/assets/images/orange.png");
-    background-position-x:10%;
-    background-size: contain;
-    background-repeat: no-repeat;
     .hero-content {
+      background-image: url("/assets/images/orange.png");
+      background-position-x:10%;
+      background-size: contain;
+      background-repeat: no-repeat;
       grid-area: hero-content;
       align-self: center;
       justify-self: center;
@@ -125,8 +125,8 @@ main {
       align-self: center;
       justify-self: center;
       img {
-        width: 500px;
-        height: 500px;
+        width: 450px;
+        height: 450px;
       }
     }
   }
@@ -140,11 +140,11 @@ main {
     padding-top: 4rem;
     z-index: 10;
     .blue {
+      // display: none;
       width: 600px;
       height: 600px;
       top: 200px;
       left: -250px;
-      // background-color: #000000;
       z-index: -1;
       width: 100%;
       object-fit: contain;
@@ -166,7 +166,6 @@ main {
       }
     }
     .hero-img {
-      background-size: contain;
       grid-area: hero-img;
       align-self: center;
       justify-self: center;
