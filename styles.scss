@@ -161,13 +161,11 @@ main {
 // 4 column layout
 .categories {
   padding: 100px 0px 0px 0px;
-  // gap: 2rem;
   .category {
-    background-color: #a76969;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0rem;
+    padding: 1.5rem 1rem;
     border-radius: 30px;
     background: #f1efef;
     border: 3px solid #f5f4f3;
