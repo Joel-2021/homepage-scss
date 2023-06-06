@@ -30,7 +30,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse nav-options" id="navbarNav">
+          <div class="collapse navbar-collapse nav-options mt-3" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Platform</a>
@@ -57,12 +57,8 @@
         </div>
       </nav> 
       <section class="hero-section">
-        <div class="hs-1 d-flex align-items-center position-relative">
-          <div class="gradient-1 position-absolute"></div>
-          <div class="gradient-2 position-absolute"></div>
-          <div class="gradient-3 position-absolute"></div>
-          <div class="gradient-4 position-absolute"></div>
-          <div>
+        <div class="hs-1">
+          <div class="hero-content">
             <h1>Customer Data Platform</h1>
             <p>
               An omnichannel engagement platform designed to empower marketers
@@ -76,14 +72,12 @@
             <img src="/assets/images/hero1.png" alt="" />
           </div>
         </div>
-        <div class="hs-2 d-flex align-items-center position-relative">
-          <div class="gradient-1 position-absolute"></div>
-          <div class="gradient-2 position-absolute"></div>
-          <div class="gradient-3 position-absolute"></div>
+        <div class="hs-2 position-relative">
+          <img src="/assets/images/blue-pink-bg.svg" class="position-absolute blue" alt="">
           <div class="hero-img">
             <img src="/assets/images/hero2.png" alt="" />
           </div>
-          <div>
+          <div class="hero-content">
             <h1>
               Increase Your Sales Growth by Putting Data and Analytics Front and
               Center
@@ -100,41 +94,41 @@
           </div>
         </div>
       </section>
-      <section class="d-flex categories justify-content-between">
+      <section class="categories">
         <div
-          class="category d-flex align-items-center justify-content-center flex-column"
+          class="category"
         >
-          <div class="circle d-flex align-items-center justify-content-center">
+          <div class="circle">
             <img src="assets/images/analysis.png" alt="" />
           </div>
           <p>Unified Customer Insights & Analytics</p>
         </div>
         <div
-          class="category d-flex align-items-center justify-content-center flex-column"
+          class="category"
         >
-          <div class="circle d-flex align-items-center justify-content-center">
+          <div class="circle">
             <img src="assets/images/journey.png" alt="" />
           </div>
           <p>Customer Journey Orchestration</p>
         </div>
         <div
-          class="category d-flex align-items-center justify-content-center flex-column"
+          class="category "
         >
-          <div class="circle d-flex align-items-center justify-content-center">
+          <div class="circle">
             <img src="assets/images/ideas.png" alt="" />
           </div>
           <p>AI-Powered Campaign Optimization</p>
         </div>
         <div
-          class="category d-flex align-items-center justify-content-center flex-column"
+          class="category"
         >
-          <div class="circle d-flex align-items-center justify-content-center">
+          <div class="circle">
             <img src="assets/images/communication.png" alt="" />
           </div>
           <p>Omnichannel Communication</p>
         </div>
       </section>
-      <section class="customer d-flex position-relative">
+      <section class="customer">
         <div class="customer-content">
           <h1>Meet Your Customers Right Where They Are</h1>
           <p>
@@ -147,10 +141,13 @@
             Know More <img src="/assets/images/arrow.png" alt="" />
           </button>
         </div>
+        <div class="customer-images">
+          <img src="assets/images/customerCrop.png" alt="">
+        </div>
       </section>
       <footer>
-        <div class="footer-top d-flex justify-content-between">
-          <div class="content">
+        <!-- <div class="footer-top d-flex justify-content-between"> -->
+          <div class="content" id="text">
             <h1>TAVAS</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -159,9 +156,9 @@
               atque molestias?
             </p>
           </div>
-          <div class="d-flex justify-content-between w-100">
+          <!-- <div class="d-flex justify-content-between w-100"> -->
 
-            <div class="content">
+            <div class="content" id="links">
               <h3>Quick Links</h3>
             <ul>
               <li>
@@ -187,7 +184,7 @@
               </li>
             </ul>
           </div>
-          <div class="content">
+          <div class="content" id="cta">
             <div class="contact">
               <h3>Contact</h3>
               <p>+91-9995458423</p>
@@ -200,10 +197,13 @@
                 <img src="/assets/images/insta.png" alt="" />
               </div>
             </div>
+            <!-- </div> -->
           </div>
+          <div id="copyright">
+
+            <p>Copyright 2022. All rights reserved</p>
           </div>
         </div>
-        <p class="copyright">Copyright 2022. All rights reserved</p>
       </footer>
     </main>
   </body>
