@@ -62,24 +62,22 @@ main {
 }
 
 .hero-section {
-  padding: 75px 100px 0 100px;
   background-image: url("/assets/images/lines.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 29%;
+  background-position: center 30%;
   font-family: "Plus Jakarta Sans";
   text-transform: capitalize;
 }
 .hero-section .hs-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "hero-content hero-img";
+  padding-top: 4rem;
 }
 .hero-section .hs-1 .hero-content {
+  align-self: center;
+  justify-self: center;
   background-image: url("/assets/images/orange.png");
   background-position-x: 10%;
-  background-size: contain;
+  background-size: 70%;
   background-repeat: no-repeat;
   grid-area: hero-content;
   align-self: center;
@@ -110,33 +108,19 @@ main {
   right: 10px;
 }
 .hero-section .hs-1 .hero-img {
-  grid-area: hero-img;
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-section .hs-1 .hero-img img {
   width: 450px;
   height: 450px;
 }
 .hero-section .hs-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "hero-img hero-content";
   padding-top: 4rem;
   z-index: 10;
 }
-.hero-section .hs-2 .blue {
-  width: 600px;
-  height: 600px;
-  top: 200px;
-  left: -250px;
-  z-index: -1;
-  width: 100%;
-  object-fit: contain;
-}
 .hero-section .hs-2 .hero-content {
-  grid-area: hero-content;
   align-self: center;
   justify-self: center;
 }
@@ -166,9 +150,12 @@ main {
   right: 10px;
 }
 .hero-section .hs-2 .hero-img {
-  grid-area: hero-img;
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/blue.png");
+  background-position: center;
+  background-size: contain;
 }
 .hero-section .hs-2 .hero-img img {
   width: 500px;
@@ -176,41 +163,36 @@ main {
 }
 
 .categories {
-  padding: 50px 100px 0px 100px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-template-rows: 1fr;
-  gap: 1rem;
+  padding: 100px 0px 0px 0px;
 }
 .categories .category {
-  position: relative;
-  z-index: 10;
-  justify-self: center;
+  background-color: #a76969;
   display: flex;
-  gap: 1rem;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-radius: 30px;
   background: #f1efef;
   border: 3px solid #f5f4f3;
-  border-radius: 30px;
-  padding: 42px 12px 12px 12px;
-  width: 100%;
 }
 .categories .category .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 13px 79px rgba(0, 0, 0, 0.06);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 145px;
-  width: 145px;
-  background: #fff;
-  box-shadow: 0px 13px 79px rgba(0, 0, 0, 0.06);
-  border-radius: 250px;
   margin-bottom: 22px;
+}
+.categories .category .circle img {
+  width: 50%;
 }
 .categories .category p {
   font-family: "Raleway";
-  font-weight: 600;
-  font-size: 28px;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 40px;
   text-align: center;
   text-transform: capitalize;
@@ -350,17 +332,8 @@ footer .content ul li a {
     margin: auto;
     margin-top: 1rem;
   }
-  .hero-section {
-    padding: 75px 30px 0 30px;
-  }
   .hero-section .hs-1 {
-    gap: 2rem;
-  }
-  .hero-section .hs-1 .hero-content {
-    grid-area: hero-content;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
+    padding-top: 2rem;
   }
   .hero-section .hs-1 .hero-content h1 {
     font-size: 28px;
@@ -369,50 +342,13 @@ footer .content ul li a {
   .hero-section .hs-1 .hero-content p {
     font-size: 16px;
   }
-  .hero-section .hs-1 .hero-content button {
-    width: 160px;
-    margin: auto;
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 3px solid rgb(27, 133, 246);
-    padding: 4px 20px 4px 10px;
-  }
-  .hero-section .hs-1 .hero-content button img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 10px;
-  }
-  .hero-section .hs-1 .hero-img {
-    grid-area: hero-img;
-    align-self: center;
-    justify-self: center;
-  }
   .hero-section .hs-1 .hero-img img {
-    width: 400px;
-    height: 400px;
-  }
-  .hero-section .hs-2 .hero-img {
-    grid-area: hero-img;
-    align-self: center;
-    justify-self: center;
+    width: 300px;
+    height: 300px;
   }
   .hero-section .hs-2 .hero-img img {
-    width: 400px;
-    height: 400px;
-  }
-  .hero-section .hs-2 .hero-content {
-    grid-area: hero-content;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
+    width: 300px;
+    height: 300px;
   }
   .hero-section .hs-2 .hero-content h1 {
     font-size: 24px;
@@ -421,38 +357,6 @@ footer .content ul li a {
   }
   .hero-section .hs-2 .hero-content p {
     font-size: 14px;
-  }
-  .hero-section .hs-2 .hero-content button {
-    width: 160px;
-    margin: auto;
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 3px solid rgb(27, 133, 246);
-    padding: 4px 20px 4px 10px;
-  }
-  .hero-section .hs-2 .hero-content button img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 10px;
-  }
-  .categories {
-    padding: 50px 30px 0px 30px;
-    margin: auto;
-  }
-  .categories .category {
-    padding-top: 30px;
-  }
-  .categories .category p {
-    font-size: 24px;
-    line-height: 32px;
   }
   .customer {
     padding: 80px 0px 80px 30px;
@@ -506,51 +410,22 @@ footer .content ul li a {
     margin-top: 1rem;
   }
   .hero-section {
-    padding: 75px 30px 0 30px;
-    background-position: center 15%;
+    padding: 0px 30px 0 30px;
+    background-position: center 40%;
   }
-  .hero-section .hs-1 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "hero-content" "hero-img";
-    gap: 2rem;
+  .hero-section .hs-1 .row {
+    flex-direction: column-reverse;
   }
   .hero-section .hs-1 .hero-content {
-    grid-area: hero-content;
-    align-self: center;
-    justify-self: center;
+    background-position: center;
+    padding-top: 1rem;
     text-align: center;
-  }
-  .hero-section .hs-1 .hero-content h1 {
-    font-size: 24px;
-    padding-bottom: 1rem;
-  }
-  .hero-section .hs-1 .hero-content p {
-    font-size: 14px;
+    padding-bottom: 3rem;
   }
   .hero-section .hs-1 .hero-content button {
-    width: 160px;
     margin: auto;
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 3px solid rgb(27, 133, 246);
-    padding: 4px 20px 4px 10px;
-  }
-  .hero-section .hs-1 .hero-content button img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 10px;
   }
   .hero-section .hs-1 .hero-img {
-    grid-area: hero-img;
     align-self: center;
     justify-self: center;
   }
@@ -559,62 +434,26 @@ footer .content ul li a {
     height: 300px;
   }
   .hero-section .hs-2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "hero-content" "hero-img";
-    gap: 2rem;
-  }
-  .hero-section .hs-2 .blue {
-    object-fit: cover;
-    top: 400px;
-    left: -30px;
+    padding-top: 1rem;
   }
   .hero-section .hs-2 .hero-img {
-    grid-area: hero-img;
-    align-self: center;
-    justify-self: center;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
   }
   .hero-section .hs-2 .hero-img img {
     width: 300px;
     height: 300px;
   }
   .hero-section .hs-2 .hero-content {
-    grid-area: hero-content;
-    align-self: center;
-    justify-self: center;
     text-align: center;
-  }
-  .hero-section .hs-2 .hero-content h1 {
-    font-size: 24px;
-    padding-bottom: 1rem;
-    line-height: 28px;
-  }
-  .hero-section .hs-2 .hero-content p {
-    font-size: 14px;
+    padding-bottom: 3rem;
   }
   .hero-section .hs-2 .hero-content button {
-    width: 160px;
     margin: auto;
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 3px solid rgb(27, 133, 246);
-    padding: 4px 20px 4px 10px;
   }
-  .hero-section .hs-2 .hero-content button img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 10px;
-  }
-  .categories .category {
-    max-width: 300px;
+  .categories {
+    padding: 20px 30px 20px 30px;
   }
   .categories .category p {
     font-size: 20px;
@@ -709,45 +548,12 @@ footer .content ul li a {
     gap: 10px;
     margin: 0 !important;
   }
-  .hero-section {
-    padding: 75px 30px 0 30px;
-    background-position-y: 20%;
-    text-align: center;
+  .hero-section .hs-1 .hero-img img {
+    width: 200px;
+    height: 200px;
   }
-  .hero-section .hs-1 {
-    flex-direction: column;
-  }
-  .hero-section .hs-1 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-section .hs-2 {
-    flex-direction: column;
-  }
-  .hero-section .hs-2 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .customer {
-    text-align: center;
-    background-image: none;
-  }
-  .customer .customer-images {
-    display: none;
-  }
-  .customer .customer-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .customer .customer-content h1 {
-    line-height: 40px;
-  }
-  .customer .customer-content button {
-    width: 196px;
+  .hero-section .hs-2 .hero-img img {
+    width: 200px;
+    height: 200px;
   }
 }/*# sourceMappingURL=styles.css.map */
