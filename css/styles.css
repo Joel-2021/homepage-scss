@@ -76,7 +76,7 @@ main {
   grid-template-rows: 1fr;
   grid-template-areas: "hero-content hero-img";
   background-image: url("/assets/images/orange.png");
-  background-position: left;
+  background-position-x: 10%;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -130,7 +130,7 @@ main {
   width: 600px;
   height: 600px;
   top: 200px;
-  left: -100px;
+  left: -250px;
   z-index: -1;
   width: 100%;
   object-fit: contain;
